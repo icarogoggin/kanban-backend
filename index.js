@@ -20,9 +20,6 @@ const port = 3000
 const tarefasRouter = require('./routers/tarefas.routes')
 app.use('/tarefas', tarefasRouter)
 
-const filmeRouter = require('./routers/filmes.routes')
-app.use('/filmes', filmeRouter)
-
 app.listen(process.env.PORT || port, () => {
     console.info(`Servidor rodando na porta ${port}`)
 })
